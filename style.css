@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --cor-tema: #065E7C;
+    --cor-tema-claro: #387E96;
+    --cor-font-claro: #FFFFFF;
+    --cor-font-escuro: #121214;
+
+}
+
+.navegation{
+    background-color: var(--cor-tema);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.8rem;
+    height: 7.2rem;
+    width: 100vw;
+    gap: 2.5rem;
+}
+
+.navegation form{
+    width: 100%;
+}
+
+.navegation input{
+    width: 100%;
+    padding: 1.2rem 1.6rem 1.4rem;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--cor-tema-claro);
+    color: var(--cor-font-claro);
+}
+
+.navegation input::placeholder{
+    color: var(--cor-font-claro);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.user{
+    height: 4.2rem;
+    border-radius: 50%;
+
+}
+
+body, input, footer, section{
+    font-family: "Mulish", sans-serif;
+    color: var(--cor-font-escuro);
+}
+
+#gatito1 {
+    width: 100%;
+}
+
+.conteudo h1{
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    margin: 3.1rem 0rem .8rem;
+}
+
+.avaliacao{
+    display: flex;
+    gap: 1.2rem;
+    
+    margin-bottom: 3.1rem;
+}
+
+.avaliacao button{
+    background-color: transparent;
+    border: none;
+    height: 4rem;
+    width: 4rem;
+}
+   
+
+.avaliacao button:hover{
+    cursor: pointer;
+    filter: contrast(150%);
+}
+
+.conteudo p{
+    margin-bottom: 3.4rem;
+
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.conteudo h1, .conteudo p, .avaliacao, .artigos{
+    padding: 0 2.5rem;
+}
+
+.artigos h2{
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    font-weight: 700;
+}
+
+.img-artigos{
+    display: flex;
+    margin: 3.2rem 0;
+}
+
+.img-artigos img{
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.conteudo-artigos{
+    margin-left: 1.6rem;
+}
+
+.conteudo-artigos h3{
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    font-weight: 700;
+}
+
+.conteudo-artigos p{
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.4rem;
+    padding: 2.6rem 1.6rem;
+    
+    background-color: var(--cor-tema);
+    color: var(--cor-font-claro);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+@media(min-width: 1070px){
+
+    nav{
+        background-color: var(--cor-tema);
+    }
+
+    .navegation{
+        margin: 0 auto;
+        max-width: 114.0rem;
+    }
+
+   main{
+    display: flex;
+    justify-content: center;
+    margin: 4.4rem auto;
+    padding: 0 1rem;
+    gap: 3.4rem;
+   }
+
+    #gatito1{
+        max-width: 70rem;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .titulo{
+        display: flex;
+        justify-content: space-between;
+        margin: 3.1rem 0;
+    }
+
+    .titulo h1, .avaliacao, .conteudo p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .conteudo{
+        max-width: 70rem;
+    }
+
+    .artigos{
+        max-width: 38rem;
+        margin: 0;
+        padding: 0;
+    }
+}
